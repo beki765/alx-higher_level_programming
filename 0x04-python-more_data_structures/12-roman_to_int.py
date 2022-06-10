@@ -21,7 +21,7 @@ def roman_to_int(roman_string):
         if (roman_string[i] == 'C'):
             if (roman_string[i - 1] == 'X' and i != 0):
                 value -= 20
-            value += 100    
+            value += 100
         if (roman_string[i] == 'D'):
             if (roman_string[i - 1] == 'C' and i != 0):
                 value -= 200
