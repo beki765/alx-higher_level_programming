@@ -7,18 +7,13 @@ class Square:
 
     
     def __init__(self, size=0):
-        """initializes the square
+        """initializes the square.
 
         Args:
-            size (int): size of a side of the square
-
-        Returns:
-            None
+            size (int): size of a side of the square.
         """
-        if type(size) is not int:
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
-        else:
-            if size < 0:
-                raise ValueError("size must be >= 0")
-        else:
-            self.__size = size
+        elif size < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = size
