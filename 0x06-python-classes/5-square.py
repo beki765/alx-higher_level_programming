@@ -4,7 +4,7 @@
 
 
 class Square:
-"""Defines a square
+    """Defines a square
     Private instance attribute: size:
     property def size(self): to retrieve it
     property setter def size(self, value): to set it:
@@ -23,7 +23,7 @@ class Square:
     @property
     def size(self):
         """Retrieves the size."""
-    return self.__size
+        return self.__size
 
     @size.setter
     def size(self, value):
@@ -39,7 +39,10 @@ class Square:
         return self.__size ** 2
 
     def my_print(self):
+        
+
         """Prints in stdout the square with the character #:"""
+
         if self.__size == 0:
             print("")
         else:
