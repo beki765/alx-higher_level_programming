@@ -21,7 +21,7 @@ class Rectangle:
     def width(self, value):
         """setter for the private instance attribute width"""
         if type(value) is not int:
-            rasie TypeError("width must be an integer")
+            raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
