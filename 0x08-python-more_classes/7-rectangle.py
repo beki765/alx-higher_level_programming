@@ -27,9 +27,9 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__width = value
 
-        @property
-        def height(self):
-            """Retrieves the position"""
+    @property
+    def height(self):
+        """Retrieves the position"""
         return self.__height
 
     @height.setter
