@@ -30,7 +30,7 @@ class Rectangle:
     @property
     def height(self):
         """Retrieves the position"""
-    return self.__height
+        return self.__height
 
     @height.setter
     def height(self, value):
@@ -38,7 +38,7 @@ class Rectangle:
         if type(value) is not int:
             raise TypeError("height must be an integger")
         if value < 0:
-            raise TypeError("heiight must be >= 0")                                     self.__height = value
+            raise TypeError("height must be >= 0")                                     self.__height = value
                                                                                     def area(self):
         """Returns the current rectangle area"""
         return self.__width * self.__height                                                                                                                         def perimeter(self):
