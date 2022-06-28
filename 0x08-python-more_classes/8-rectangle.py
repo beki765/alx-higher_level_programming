@@ -60,7 +60,9 @@ class Rectangle:
             _str += str(self.print_symbol) * self.width
             if self.height != i + 1:
                 _str += '\n'
-        return _str                                                                                                                                                             def __repr__(self):
+        return _str
+
+    def __repr__(self):
         """Return a string representation of the rectangle"""
         return("Rectangle({}, {})".format(self.width, self.height))
 
