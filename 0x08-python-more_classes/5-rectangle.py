@@ -40,7 +40,7 @@ class Rectangle:
 
     def area(self):
         '''Defining a method to get the area of the Rectangle'''
-        return (self.height * self.width
+        return (self.height * self.width)
 
     def perimeter(self):
         '''Defining a method to get the perimeter of the Rectangle'''
@@ -54,7 +54,7 @@ class Rectangle:
             return ""
         else:
             printable = ((("#" * self.width) + "\n") * self.height)
-        return (printable[:-1])
+            return (printable[:-1])
 
     def __repr__(self):
         '''Defining __repr__ Method'''
