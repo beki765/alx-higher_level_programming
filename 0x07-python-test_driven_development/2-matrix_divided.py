@@ -16,10 +16,10 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError("division by zero")
 
     for i in range(len(matrix)):
-    if type(matrix[i]) is not list:
-        raise TypeError(l_error)
-    if len(matrix[0]) != len(matrix[i]):
-        raise TypeError("Each row of the matrix must have the same size")
+        if type(matrix[i]) is not list:
+            raise TypeError(l_error)
+        if len(matrix[0]) != len(matrix[i]):
+            raise TypeError("Each row of the matrix must have the same size")
 
     for i in range(len(matrix)):
         mtx.append([])
