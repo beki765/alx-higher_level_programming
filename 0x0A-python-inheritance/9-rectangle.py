@@ -13,12 +13,13 @@ class BaseGeometry():
 
     def integer_validator(self, name, value):
         '''that validates value:
-    if value is not an integer: raise a TypeError exception
-    if value is less or equal raise a ValueError exception with the message'''
-    if type(value) is not int:
-        raise TypeError("{} must be an integer".format(name))
-    if value <= 0:
-        raise ValueError("{} must be greater than 0".format(name))
+        if value is not an integer: raise a TypeError exception
+        if value is less or equal to 0:
+        raise a ValueError exception with the message'''
+        if type(value) is not int:
+            raise TypeError("{} must be an integer".format(name))
+        if value <= 0:
+            raise ValueError("{} must be greater than 0".format(name))
 
 
 class Rectangle(BaseGeometry):
