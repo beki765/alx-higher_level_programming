@@ -31,12 +31,11 @@ class Rectangle(BaseGeometry):
         super().integer_validator("width", width)
         super().integer_validator("height", height)
 
-
     def area(self):
         '''Function that return the rectangle area'''
         return self.__width * self.__height
 
-    def __str__(self):  
+    def __str__(self):
         '''Defining __str__ Method'''
         string = "[Rectangle] {}/{}".format(self.__width, self.__height)
         return string
