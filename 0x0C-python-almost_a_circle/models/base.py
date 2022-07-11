@@ -62,6 +62,6 @@ class Base():
                 for a in range(len(y)):
                     z = cls.create(**y[a])
                     ls.append(z)
-                return ls
-            except Exception:
-                return ls
+            return ls
+        except Exception:
+            return ls
