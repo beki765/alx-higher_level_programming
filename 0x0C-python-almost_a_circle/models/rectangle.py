@@ -23,7 +23,7 @@ class Rectangle(Base):
     def width(self, width):
         self.check_wh("width", width)
         self.__width = width
-  
+
     @property
     def height(self):
         return self.__height
@@ -50,7 +50,7 @@ class Rectangle(Base):
     def y(self, y):
         self.check_xy("y", y)
         self.__y = y
-    
+
     def check_wh(self, n, a):
         '''Method that check the values of width and height'''
         if type(a) is not int:
@@ -99,7 +99,7 @@ class Rectangle(Base):
         # y los convierte en una lista
         '''for i in range(len(args)):
             setattr(self, list(self.__dict__.keys())[i], args[i])'''
-             
+
         if len(args) == 0:
             for x in kwargs:
                 setattr(self, x, kwargs[x])
@@ -112,5 +112,3 @@ class Rectangle(Base):
         key = ["id", "width", "height", "x", "y"]
         value = list(self.__dict__.values())
         return dict(zip(key, value))
-
-
